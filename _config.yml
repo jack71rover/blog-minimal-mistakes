@@ -1,88 +1,26 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'.2. If you change this file, please restart the server process.
+# 網站基本資訊
+locale                   : "zh-TW"
+title                    : "張哲魁的專業部落格"
+title_separator          : "-"
+subtitle                 : "永續發展 | 淨零碳排 | AI 應用"
+name                     : "張哲魁"
+description              : "分享關於氣候危機、溫室氣體盤查、碳足跡及 AI 助理應用的專業見解。"
+url                      : "https://your-site-url.com" # 部署後請修改為您的網址
+baseurl                  : ""
 
-# Site Settings
-locale: "zh-TW"
-title: "張哲魁"
-title_separator: "-"
-subtitle: "ISO認證 | 淨零碳規劃 | AI應用規劃"
-name: "張哲魁"
-description: "朝陽科技大學推廣教育處總務行政組主任、TTQS評核委員及TTQS訓練講師。專長包括 ISO 9001, ISO 14064, ISO 14067, 淨零碳規劃管理及AI應用規劃。"
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-repository: "jack71rover/blog-minimal-mistakes" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-
-# Site Author
+# 作者資訊
 author:
-  name: "張哲魁"
-  avatar: "/assets/images/bio-photo.jpg" # 建議您之後更換為您的個人照片
-  bio: "朝陽科技大學推廣教育處總務行政組主任、TTQS評核委員及TTQS訓練講師"
+  name   : "張哲魁"
+  avatar : "/assets/images/bio-photo.jpg" # 建議更換為您的頭像檔案
+  bio    : "朝陽科技大學總務行政組主任 / TTQS 評核委員及講師"
   location: "台灣, 台中"
-  email: #
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your-email@example.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "http://example.com"
-
-# Site Footer
-footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:your-email@example.com"
 
-# Reading Files
-include: [".htaccess"]
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - "vendor"
-  - ".asset-cache"
-  - ".bundle"
-  - ".jekyll-assets-cache"
-  - ".sass-cache"
-  - "assets/js/plugins/jquery-3.6.0.min.js"
-  - "assets/js/plugins/jquery.fitvids.js"
-  - "assets/js/plugins/jquery.greedy-navigation.js"
-  - "assets/js/plugins/jquery.magnific-popup.js"
-  - "assets/js/plugins/jquery.smooth-scroll.js"
-  - "assets/js/plugins/stickyfill.min.js"
-  - "assets/js/main.js"
-  - "assets/js/main.min.js"
-  - "assets/js/lunr/lunr.min.js"
-  - "assets/js/lunr/lunr-store.js"
-  - "assets/js/lunr/lunr-en.js"
-  - "assets/js/lunr/lunr-de.js"
-  - "assets/js/lunr/lunr-fr.js"
-  - "assets/js/lunr/lunr-gr.js"
-  - "assets/js/lunr/lunr-zh.js"
-  - "assets/js/lunr/lunr-ko.js"
-  - "assets/js/lunr/lunr-jp.js"
-  - "assets/js/lunr/lunr-vn.js"
-  - "assets/js/lunr/lunr-ru.js"
-  - "CHANGELOG.md"
-  - "LICENSE"
-  - "README.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "node_modules"
-  - "package.json"
-  - "package-lock.json"
-  - "Rakefile"
-
-# Defaults
+# 預設版型設定
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -94,16 +32,7 @@ defaults:
       share: true
       related: true
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Outputting
-permalink: /:categories/:title/
-timezone: Asia/Taipei # Added timezone
-
-# Plugins
+# 外掛程式
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -111,23 +40,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: /page:num/
-
-# Search Settings
-search: true
-search_full_content: true # set true if you want to search through full post content
-search_provider: lunr # lunr, algolia, google
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [development]
-  blanklines: false
-  profile: false
-  startings: []
+timezone: Asia/Taipei
